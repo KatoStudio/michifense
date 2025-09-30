@@ -9,11 +9,17 @@
     <style>
         body {
             font-family: 'Inter', sans-serif;
+            /* Configuración del fondo de imagen */
+            background-image: url('grafico.png'); /* Ruta de la imagen subida */
+            background-size: cover; /* Asegura que la imagen cubra todo el fondo */
+            background-position: center; /* Centra la imagen */
+            background-attachment: fixed; /* Mantiene la imagen fija al desplazarse */
         }
     </style>
 </head>
-<body class="bg-slate-900 text-white min-h-screen flex items-center justify-center p-4">
-    <div class="max-w-xl mx-auto text-center bg-slate-800 p-8 rounded-2xl shadow-lg border border-slate-700">
+<body class="text-white min-h-screen flex items-center justify-center p-4">
+    <!-- El fondo de la caja principal se mantiene con un color oscuro y semi-transparente para mejorar la legibilidad -->
+    <div class="max-w-xl mx-auto text-center bg-slate-800/90 backdrop-blur-sm p-8 rounded-2xl shadow-lg border border-slate-700">
         <h1 class="text-4xl md:text-5xl font-bold mb-4">Michifense</h1>
         <p class="text-lg text-slate-300 mb-6">
             ¡Prepárate para la aventura! Michifense es un juego increíble donde la estrategia y la diversión se unen. ¡Descárgalo ya!
