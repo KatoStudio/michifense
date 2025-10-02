@@ -9,16 +9,13 @@
     <style>
         body {
             font-family: 'Inter', sans-serif;
-            /* Configuración del fondo de imagen */
-            background-image: url('grafico.png'); /* Ruta de la imagen subida */
-            background-size: cover; /* Asegura que la imagen cubra todo el fondo */
-            background-position: center; /* Centra la imagen */
-            background-attachment: fixed; /* Mantiene la imagen fija al desplazarse */
+            /* Configuración del fondo de imagen, usando ruta RELATIVA para funcionar en el subdirectorio /michifense/ */
+            background-image: url('grafico.png'); 
+            background-size: cover; 
+            background-position: center; 
+            background-attachment: fixed; 
         }
     </style>
-    <!-- SOLUCIÓN AVANZADA PARA ADMOB: Indica a los rastreadores dónde está el archivo si usan la raíz incorrecta -->
-    <!-- Esto es útil si tienes el archivo en un subdirectorio como en GitHub Pages -->
-    <link rel="alternate" type="text/plain" href="https://katostudio.github.io/michifense/app-ads.txt">
 </head>
 <body class="text-white min-h-screen flex items-center justify-center p-4">
     <!-- El fondo de la caja principal se mantiene con un color oscuro y semi-transparente para mejorar la legibilidad -->
@@ -45,7 +42,7 @@
             </a>
         </div>
         
-        <!-- Enlace al archivo app-ads.txt -->
+        <!-- Enlace al archivo app-ads.txt: Usa ruta RELATIVA para funcionar en el subdirectorio /michifense/ -->
         <p class="text-xs text-slate-500 mt-8">
             <a href="app-ads.txt" class="underline hover:text-white transition-colors duration-300">Ver archivo app-ads.txt</a>
         </p>
